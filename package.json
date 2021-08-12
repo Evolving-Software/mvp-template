@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "lerna run dev",
+    "build": "npm run dev && npm run build:prod",
+    "test": "lerna run test"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
